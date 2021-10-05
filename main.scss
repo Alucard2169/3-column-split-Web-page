@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  font-size: 15px;
+  box-sizing: border-box;
+}
+$first_section: hsl(31, 77%, 52%);
+$second_section: hsl(184, 100%, 22%);
+$third_section: hsl(179, 100%, 13%);
+
+$heading: hsl(0, 0%, 95%);
+$content: hsla(0, 0%, 100%, 0.75);
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+.container {
+  margin: 4rem 1.5rem;
+}
+section {
+  padding: 3.5rem 3.1rem;
+}
+.split1 {
+  background: $first_section;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+
+  .learn_more {
+    color: $first_section;
+  }
+}
+.split2 {
+  background: $second_section;
+
+  .learn_more {
+    color: $second_section;
+  }
+}
+.split3 {
+  background: $third_section;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+
+  .learn_more {
+    color: $third_section;
+  }
+}
+
+.heading {
+  font-family: "Big Shoulders Display", cursive;
+  line-height: 1.2;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: $heading;
+  text-transform: uppercase;
+}
+.content {
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 1.8;
+  font-weight: 400;
+  color: $content;
+}
+.learn_more {
+  margin-top: 0.8rem;
+  padding: 1rem 2.5rem;
+  border-radius: 25px;
+  border: none;
+
+  &:hover {
+    outline: 2px solid white;
+    background: transparent;
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    margin: 10rem 20rem;
+  }
+
+  .learn_more {
+    margin-top: 6rem;
+  }
+  .split3 {
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 0;
+  }
+  .split1 {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+  }
+
+  .button {
+    display: flex;
+  }
+}
