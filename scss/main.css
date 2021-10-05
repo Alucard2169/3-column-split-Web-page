@@ -9,7 +9,6 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background: black;
 }
 
 .container {
@@ -97,7 +96,7 @@ section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 10rem 20rem;
+    margin: 15rem 20rem;
   }
   .learn_more {
     margin-top: 6rem;
